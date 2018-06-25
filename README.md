@@ -5,7 +5,7 @@ Following the tutorial for Django Channels
 ### Virtual Environment
 It is strongly recommended to use a Python virtual environment. To create a virtual env, use the venv feature of python3. Run the command below in the root project directory. Recommended folder name for the virtual environment is env.
 ```
-python3 -m venv <env-folder-name>
+python3.6 -m venv --without-pip <env-folder-name>
 ```
 
 
@@ -16,5 +16,13 @@ source <env-folder-name>/bin/activate
 
 After activating, to install the dependencies run
 ```
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 ```
+
+### Other dependencies
+ - Install python3.6
+ - Install python3.6-dev
+ - Create python3.6 venv without pip to avoid error
+ - Curl pip and install after activating venv
+ - Deactivate and reactivate venv
+ - Install django and channels
