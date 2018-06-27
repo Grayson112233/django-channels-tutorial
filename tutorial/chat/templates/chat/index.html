@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chat Rooms</title>
+</head>
+<body>
+	
+	<h3> What chatroom would you like to enter?</h3>
+	<input type="text" id="room-name-input" size="100"/>
+	<input type="button" id="room-name-submit" value="Enter"/>
+
+	<script>
+		document.querySelector('#room-name-input').focus();
+		document.querySelector('#room-name-input').onkeyup = function(e) {
+			if(e.keyCode === 13) {
+				document.querySelector('#room-name-submit').click();
+			}
+		};
+		document.querySelector('#room-name-submit').onclick = function(e) {
+			var roomName = document.querySelector('#room-name-input').value;
+			window.location.pathname = '/chat/' + roomName + '/';
+		};
+	</script>
+
+</body>
+</html>
