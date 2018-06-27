@@ -23,6 +23,6 @@ pip install -r requirements.txt
  - Install python3.6
  - Install python3.6-dev
  - Create python3.6 venv without pip to avoid error
- - Curl pip and install after activating venv
+ - Curl pip and install after activating venv (`curl https://bootstrap.pypa.io/ez_setup.py -o - | python3.6 && python3.6 -m easy_install pip`)
  - Deactivate and reactivate venv
  - Install django and channels
